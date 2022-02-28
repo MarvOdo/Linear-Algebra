@@ -676,10 +676,3 @@ class Vector:
         if result.magnitude() == 0:
             return result
         return result / result.magnitude()
-		
-
-#For examples: Defines a 2x2 Matrix A, and a 2x3 Matrix B, prints their product, and the eigenvalues of A
-A = Matrix((2, 2), [[1, 6], [3, -2]])
-B = Matrix((2, 3), [[0, 4, -2], [1.04, 2+3j, 5]])
-print(f"A = {A}\nB = {B}\nA*B = {A*B}")
-print(f"eigenvalues of A = {A} are:\n{A.eigenvalues()}")
