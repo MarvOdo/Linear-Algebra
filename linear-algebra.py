@@ -676,3 +676,13 @@ class Vector:
         if result.magnitude() == 0:
             return result
         return result / result.magnitude()
+		
+A = Matrix((2, 2), [[2, 5], [6, -2.45]])
+B = Matrix((2, 3), [[2, 0, -1.314], [2+7j, 6, -3-6j]])
+print(f"A = {A}\nB = {B}\nA*B = {A*B}")
+print(f"B in echelon form: {B.echelon()}")
+print(f"B in reduced echelon form: {B.reduced()}")
+print(f"Eigenvalues of A: {A.eigenvalues()}")
+print(f"QR factorization of A (A = Q*R):\nQ = {A.QR()[0]}\nR = {A.QR()[1]}")
+v = Vector(5, [2, 0, -3, 2+5j, 3])
+print(f"v = {v}\nUnit Vector of v = {v.unit()}")
